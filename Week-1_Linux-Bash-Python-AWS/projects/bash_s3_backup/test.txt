@@ -1,4 +1,5 @@
 Hi  Viewer,
-This text file was created to for a project where I backed up this file in Amazon S3 bucket using bash.
+This text file was created  for this project where I backed up this file in Amazon S3 bucket using bash.
 
-Thank You
+
+Thank You for visiting.
