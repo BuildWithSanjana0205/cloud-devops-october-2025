@@ -5,14 +5,15 @@ I’m building strong fundamentals in **Linux, Bash scripting, Python automation
 
 ---
 
-## 📅 Monthly Breakdown
+📅 **Monthly Breakdown**
 
 | Week | Focus Area | Key Projects |
-|------|-------------|---------------|
-| Week 1 (Oct 4–10) | Linux, Bash, Python, AWS Basics | Bash S3 Backup, Python EC2 Manager, Manual VPC Setup |
-| Week 2 (Oct 11–17) | Terraform & AWS Core Services | Terraform VPC, Web App with RDS, IAM setup |
-| Week 3 (Oct 18–24) | Containers & CI/CD | Dockerize App, ECS Fargate Deployment, CI/CD via GitHub Actions |
-| Week 4 (Oct 25–31) | Kubernetes & Security | K8s Local Deployment, Secure S3 Static Site, Secrets Manager |
+|------|-------------|--------------|
+| [Week 1 (Oct 4–10)](./Week-1_Linux-Bash-Python-AWS) | Linux, Bash, Python, AWS Basics | [Bash S3 Backup](./Week-1_Linux-Bash-Python-AWS/projects/bash_s3_backup), Python EC2 Manager, Manual VPC Setup |
+| [Week 2 (Oct 11–17)](./Week-2_Terraform-AWS-Core) | Terraform & AWS Core Services | Terraform VPC, Web App with RDS, IAM setup |
+| [Week 3 (Oct 18–24)](./Week-3_Containers-CICD) | Containers & CI/CD | Dockerize App, ECS Fargate Deployment, CI/CD via GitHub Actions |
+| [Week 4 (Oct 25–31)](./Week-4_Kubernetes-Security) | Kubernetes & Security | K8s Local Deployment, Secure S3 Static Site, Secrets Manager |
+
 
 ---
 
