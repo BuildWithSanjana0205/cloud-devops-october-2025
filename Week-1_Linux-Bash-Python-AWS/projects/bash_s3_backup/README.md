@@ -74,25 +74,37 @@ These instructions will get you a copy of the project up and running on your loc
 To run the backup script:
 
 ```bash
-./backup.sh '''
-
+./backup.sh
+```
 Upon successful execution, you should see output similar to:
 
+```Starting S3 backup process...
 Starting S3 backup process...
 Attempting to copy '/home/youruser/projects/bash_s3_backup/test_file.txt' to 's3://your-s3-bucket-name/test_backups/test_file.txt'
 upload: ./test_file.txt to s3://your-s3-bucket-name/test_backups/test_file.txt
 Backup process finished.
-
+```
+---
 Verify the uploaded file in your AWS S3 console under the specified bucket and path (e.g., s3://your-s3-bucket-name/test_backups/test_file.txt).
-📸 Verification
+
+---
+📸 Verification:
+
 Here's a screenshot confirming the successful upload of test_file.txt to the S3 bucket:
 <!-- This tag will be replaced by an image by the model -->
-<img src="screenshots/s3-upload-verification.png" alt="S3 Upload Verification" width="600"/>
+<img src="s3-upload-verification.png" alt="S3 Upload Verification" width="600"/>
 
-🤝 Contributing
+---
+## 🤝 Contributing
+
 Feel free to fork this repository, submit pull requests, or open issues for suggestions and improvements.
+
+---
 
 🧑‍💻 Author
 [Sanjana Tripathy]
-GitHub Profile
-LinkedIn Profile
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/sanjana-tripathy-902139274/)
+[![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=github)](https://github.com/BuildWithSanjana0205)
+✉️ Email: tripathysanjana02@gmail.com
+
