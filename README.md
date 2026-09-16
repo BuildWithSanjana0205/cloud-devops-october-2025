@@ -28,41 +28,72 @@ This is a **learning journal**, not a polished product. It shows my day-to-day p
 
 ---
 
-## aws-devops-learning/
-│
-├── README.md
-│   └── Repository index
-│
-├── course-outline.md
-│   └── AWS syllabus and topics covered
-│
-├── concepts/
-│   ├── aws-ec2-basics.md
-│   ├── aws-vpc-fundamentals.md
-│   └── ...
-│
-├── labs/
-│   ├── 01-ec2-static-website/
-│   ├── 02-alb-target-groups/
-│   ├── 03-s3-static-site/
-│   └── ...
-│
-├── scripts/
-│   ├── Bash scripts
-│   ├── Python scripts
-│   ├── AWS CLI utilities
-│   └── boto3 scripts
-│
-├── daily-logs/
-│   ├── 2025-08-25.md
-│   ├── YYYY-MM-DD.md
-│   └── ...
-│
-└── assets/
-    ├── Diagrams
-    ├── Screenshots
-    ├── Architecture diagrams
-    └── Other learning resources
+##📚 Repository Index
+📄 README.md
+
+Repository index and overview
+
+📄 course-outline.md
+
+AWS syllabus and learning roadmap
+
+📁 concepts/
+
+📄 aws-ec2-basics.md
+
+📄 aws-vpc-fundamentals.md
+
+📄 ...
+
+Topic-wise AWS notes and concepts
+
+📁 labs/
+
+📁 01-ec2-static-website/
+
+EC2 static website deployment
+
+📁 02-alb-target-groups/
+
+Application Load Balancer and target groups
+
+📁 03-s3-static-site/
+
+S3 static website hosting
+
+📁 ...
+
+Additional AWS labs and mini-projects
+
+📁 scripts/
+
+Bash scripts
+
+Python scripts
+
+AWS CLI utilities
+
+boto3 automation scripts
+
+📁 daily-logs/
+
+📄 2025-08-25.md
+
+📄 YYYY-MM-DD.md
+
+📄 ...
+
+Daily learning progress and notes
+
+📁 assets/
+
+Diagrams
+
+Screenshots
+
+Architecture diagrams
+
+Other supporting resources
 
 ---
 
@@ -142,9 +173,10 @@ When I learn a new AWS concept, I add a note in `concepts/<topic>.md`.
 
 ## References
 - Links to official AWS docs or good tutorials
+  
 ```
 
----
+```
 
 ## 🤝 Connect with Me
 
