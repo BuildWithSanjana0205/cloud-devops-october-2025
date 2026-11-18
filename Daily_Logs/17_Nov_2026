@@ -1,1 +1,129 @@
+# 2026-11-17
 
+## What I Learned Today
+- Deploy a webserver in  instance with linux ami  and host a website
+- Automate EC2 provisioning and web server deployemnt using user data.
+- Create an instance using custom ami
+- Launch instance with windows AMI and deployed a webserver and hosted a website with it.
+
+
+## Concepts Covered
+-Amazon EC2 and Instance Provisioning
+-Amazon Machine Images (AMI)
+-Custom AMI Creation and Instance Launching
+-Linux Server Administration
+-Windows Server Administration
+-Apache HTTP Server (Linux)
+-IIS Web Server (Windows), if used
+-EC2 User Data and Bootstrapping
+-Bash Scripting and Automation
+-SSH (Secure Shell)
+-RDP (Remote Desktop Protocol)
+-Security Groups and Inbound Rules
+-HTTP Protocol and Port 80
+-Web Server Configuration and Hosting
+-Automated Instance Configuration
+
+## Practical / Lab Done
+- Will be updated today
+
+## Issues / Errors & How I Fixed Them
+- If any doubts/mistakes i will add in the respective labs
+
+## Commands used
+Linux commands used for Apache Web Server deployment
+No.	Purpose	Command
+1	Install Apache HTTP Server	sudo yum install httpd -y
+2	Start Apache service	sudo systemctl start httpd
+3	Enable Apache service at boot	sudo systemctl enable httpd
+4	Switch to root user	sudo su -
+5	Create website directory	sudo mkdir -p /var/www/html
+6	Create/edit index.html	sudo nano /var/www/html/index.html
+7	Check Apache service status	sudo systemctl status httpd
+8	Test web server locally	curl -I http://localhost
+
+5. Write HTML content directly into index.html
+You can use cat with a heredoc to write the website content:
+sudo cat > /var/www/html/index.html <<'EOF'
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My AWS Website</title>
+</head>
+<body>
+    <h1>Welcome to my AWS EC2 Website!</h1>
+    <p>Hosted on an Amazon Linux instance.</p>
+</body>
+</html>
+EOF
+
+
+Git commands
+No.	Purpose	Command
+1	Install Git	sudo yum install git -y
+2	Verify Git installation	git --version
+3	Clone a GitHub repository	git clone <repository-url>
+4	Navigate into cloned repository	cd <repository-name>
+
+To copy website files from GitHub into the Apache default document root:
+sudo cp -r <repository-name>/* /var/www/html/
+
+
+EC2 User Data – Automate web server deployment
+User Data allows you to execute a script automatically when launching an EC2 instance.
+
+Example: Amazon Linux User Data script
+#!/bin/bash
+
+# Update packages
+yum update -y
+
+# Install Apache
+yum install httpd -y
+
+# Start and enable Apache
+systemctl start httpd
+systemctl enable httpd
+
+# Create website
+cat > /var/www/html/index.html <<'EOF'
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automated AWS Website</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p>This website was deployed automatically using EC2 User Data.</p>
+</body>
+</html>
+EOF
+
+
+Example: User Data script using GitHub
+#!/bin/bash
+
+yum update -y
+yum install httpd git -y
+
+systemctl start httpd
+systemctl enable httpd
+
+cd /tmp
+git clone <repository-url>
+
+cp -r <repository-name>/* /var/www/html/
+
+
+Note: Replace the repository URL and repository name with your actual GitHub details.
+Important concepts to remember
+- yum: Package manager used in Amazon Linux.
+- systemctl: Manages Linux services.
+- sudo: Executes commands with elevated privileges.
+- mkdir: Creates directories.
+- cat: Creates or writes file contents.
+- nano: Opens a text editor in the terminal.
+- git clone: Downloads a repository from GitHub.
+- /var/www/html: Apache's default document root on Amazon Linux.
+- #!/bin/bash: Specifies Bash as the script interpreter.
+One important AWS configuration: Your EC2 Security Group must allow inbound HTTP traffic on port 80 for users to access your hosted website through the public IP address.
